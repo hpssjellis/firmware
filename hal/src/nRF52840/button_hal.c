@@ -273,7 +273,6 @@ void HAL_Core_Button_Mirror_Pin(uint16_t pin, InterruptMode mode, uint8_t bootlo
     BUTTON_Init(BUTTON1_MIRROR, BUTTON_MODE_EXTI);
 
     if (pin == HAL_Buttons[BUTTON1].pin) {
-        LOG(WARN, "Pin %d shares the same EXTI as SETUP/MODE button", pin);
         BUTTON_Mirror_Persist(NULL);
         return;
     }
