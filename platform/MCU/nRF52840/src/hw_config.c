@@ -129,6 +129,8 @@ void Reset_System(void) {
 
     BUTTON_Uninit();
 
+    RGB_LED_Uninit();
+
     __DSB();
 }
 
