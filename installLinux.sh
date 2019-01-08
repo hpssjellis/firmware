@@ -26,6 +26,13 @@ tar xf gcc-arm-none-eabi-5_3-2016q1-20160330-linux.tar
 
 sudo mv gcc-arm-none-eabi-5_3-2016q1 /usr/gcc-arm
 
+#just incase you have a 64 bit computer. This makes it like a 32 bit which is needed
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+
+
+
 
 ## Should make this more permanent, will need to run this path every time you open a terminal
 export PATH=$PATH:/usr/gcc-arm/bin
