@@ -74,13 +74,13 @@ echo ""
 
 echo "using git checkout v0.8.0-rc.27"
 
+cd firmware     
 
 ## change this for higher versions
 git checkout v0.8.0-rc.27 
 git submodule update --init
 
 
-cd firmware
 
 cd main
 
